@@ -9,4 +9,4 @@ if [ ! -f "${1:-}/setup.py" ]; then
   exit 1
 fi
 
-python "$(dirname "${1:-}")/setup.py" test
+python "${1:-}/setup.py" test
